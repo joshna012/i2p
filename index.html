@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>i2p</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Image To Prompt Generator</h1>
+    <form>
+      <div class="image-uploader drop-zone" id="drop-zone">
+        <p>Drag and drop your image here or <a href="#" onclick="event.preventDefault(); fileInput.click();">click to upload</a></p>
+        <input type="file" name="image-upload" accept="image/*" hidden>
+      </div>
+      <div class="prompt-box">
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p class="output">(Results will Show In PopUp)</p>
+    <button id="copy-btn" class="button hide">Copy</button> 
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
